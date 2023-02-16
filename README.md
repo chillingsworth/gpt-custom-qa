@@ -26,6 +26,7 @@
 4. Once you get a response from the server using ```make test```, run the Next.JS frontend app.
 
     ```cd frontend```
+    
     ```make run-dev```
 
 5. When you run the Next.JS project, a browser window will desplay and you can enter a question and get an answer.
