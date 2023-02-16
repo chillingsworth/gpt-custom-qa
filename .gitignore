@@ -1,0 +1,8 @@
+.env
+notebooks/
+.vscode/
+node_modules/
+.next/
+__pycache__/
+data/
+*/package-lock.json

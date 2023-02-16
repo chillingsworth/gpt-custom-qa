@@ -1,0 +1,6 @@
+flask>=2.0.2
+numpy
+openai
+pandas
+tiktoken
+flask-cors
