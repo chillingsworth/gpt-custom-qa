@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <p className={styles.description}>
-            settlementdaddy.com
+            GPT Corpus Search
         </p>
         <div>
           <Search></Search>
