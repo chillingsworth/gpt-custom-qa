@@ -107,7 +107,8 @@ def get_embedding(text: str, model: str) -> list[float]:
 
 def search(query, COMPLETIONS_MODEL, EMBEDDING_MODEL, df):
 
-    with open('./models/gpt3qa/data/document_embeddings.pickle', 'rb') as handle:
+    # with open('./models/gpt3qa/data/document_embeddings.pickle', 'rb') as handle:
+    with open('./data/document_embeddings.pickle', 'rb') as handle:
         document_embeddings = pickle.load(handle)
 
     MAX_SECTION_LEN = 500
@@ -145,7 +146,8 @@ def answer(text: str):
 
     prompt = "are structured settlements taxed"
 
-    df = pd.read_csv('./models/gpt3qa/data/wikipedia-ss.csv')
+    # df = pd.read_csv('./models/gpt3qa/data/wikipedia-ss.csv')
+    df = pd.read_csv('./data/wikipedia-ss.csv')
 
     df = df.set_index(["title", "heading"])
 
